@@ -8,7 +8,9 @@ x-common-django:
   env_file:
     - .env
   volumes:
-    # - '.:/usr/src/geonode_mgb2'
+    # Remova o comentário abaixo para expor código fonte para o container
+    # Caso não atualize automáticamente, basta reinicar o stack (docker-compose restart)
+    - #'./src:/usr/src/geonode_mgb2'
     - statics:/mnt/volumes/statics
     - geoserver-data-dir:/geoserver_data/data
     - backup-restore:/backup_restore
