@@ -1,6 +1,7 @@
 # The row below allow docker-compose to build images even if 
 # geonode-mapstore-client-3.3.0 is a broken dependency. Can be deleted once geonode-mapstore-client
 # 3.3.0 will be available 
+<<<<<<< HEAD
 #-e git+https://github.com/GeoNode/geonode-mapstore-client.git@3.3.x#egg=django_geonode_mapstore_client
 #-e git+https://github.com/GeoNode/geonode.git@3.3.x#egg=GeoNode
 GeoNode==3.3.3
@@ -8,3 +9,8 @@ django-geonode-mapstore-client==3.3.3
 # PyGDAL precisa estar de acordo com a versão instalada no OS/Container
 # Opcional para quem vai escrever rotinas usando o GDAL
 pygdal==3.2.2.*
+=======
+-e git+https://github.com/GeoNode/geonode-mapstore-client.git@3.3.x#egg=django_geonode_mapstore_client
+-e git+https://github.com/GeoNode/geonode.git@3.3.x#egg=GeoNode
+# GeoNode==3.3.0
+>>>>>>> parent of 8b1e707 ([GeoNode] Fixar versão de GeoNode, Mapstore Client e pyGDAL)
